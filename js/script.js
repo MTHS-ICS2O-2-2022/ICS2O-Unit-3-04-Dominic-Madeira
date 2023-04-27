@@ -1,9 +1,18 @@
 // Copyright (c) 2023 Dominic M. All rights reserved
 //
 // Created by: Dominic M.
-// Created on: Sep 2020
-// This file contains the JS functions for index.html
+// Created on: April 2023
+'use strict'
+/**
+ * This function converst fahrenheit to celsius
+ */
+function myButtonClicked () {
+  // input
+  const fahrenheit = parseFloat(document.getElementById('temperature').value)
 
-function myButtonClicked() {
-  alert("Calculation Failed!!")
+  // process
+  const celsius = (fahrenheit - 32) * 5 / 9
+
+  // output
+  document.getElementById('celsius').innerHTML = 'The temperature is: ' + celsius.toFixed(2) + ' °C'
 }

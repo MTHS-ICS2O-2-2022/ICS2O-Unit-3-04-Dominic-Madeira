@@ -29,7 +29,7 @@
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
           <!-- This is the header of the webpage -->
-          <span class="mdl-layout-title"><h3>Calculator</h3></span>
+          <span class="mdl-layout-title"><h3>Convert Fahrenheit to Celsius</h3></span>
         </div>
       </header>
       <main class="mdl-layout__content">
@@ -40,25 +40,13 @@
           </div>
           <div class="mdl-textfield mdl-js-textfield">
             <!--This is where they type in the answer-->
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="age-entered"
-            />
-            <label class="mdl-textfield__label" for="age-entered"
-              >Enter a number ...</label
-            >
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="temperature" step="0.01" />
+            <label class="mdl-textfield__label" for="temperature">Enter a number ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
         <div>
-          <img src="./images/Calculator-Download-PNG-1.png" alt="calculator" />
-          <style>
-            img {
-              float: right;
-            }
-          </style>
+          <img src="./images/thermometer.png" alt="Thermometer" />
         </div>
         <br />
         <!-- Colored raised button -->
@@ -70,6 +58,7 @@
         </button>
         <br />
         <br />
+        <div id="celsius"></div>
       </main>
     </div>
   </body>
